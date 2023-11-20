@@ -2,19 +2,8 @@
 
 Welcome to my personal website repository! This project showcases my skills, experiences, and projects in web development.
 
-## Table of Contents
 
-- [Introduction](#introduction)
-- [File Structure](#file-structure)
-- [Usage](#usage)
-- [Contributing](#contributing)
-- [License](#license)
-
-## Introduction
-
-I'm Hasan Rizvee, a passionate web developer and SEO expert with over 8 years of experience. This repository contains the source code for my personal website.
-
-## File Structure
+## :file_folder: File Structure
 
 ```plaintext
 RIZVEE.GITHUB.IO
@@ -23,13 +12,13 @@ RIZVEE.GITHUB.IO
 │   README.md
 │
 ├───css
-│   # CSS files
+│   # Stylish CSS files
 │
 ├───images
-│   # Image files
+│   # Visuals that make it pop
 │
 ├───js
-│   # JavaScript files
+│   # JavaScript for interactivity
 │
 └───webfonts
-    # Font files
+    # Fonts to make it look good
