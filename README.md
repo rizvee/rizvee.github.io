@@ -12,13 +12,13 @@ RIZVEE.GITHUB.IO
 │   README.md
 │
 ├───css
-│   # Stylish CSS files
+│   # CSS files
 │
 ├───images
-│   # Visuals that make it pop
+│   # img files
 │
 ├───js
-│   # JavaScript for interactivity
+│   # JavaScript files
 │
 └───webfonts
-    # Fonts to make it look good
+    # Fonts
