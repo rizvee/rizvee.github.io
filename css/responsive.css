@@ -66,11 +66,11 @@
 	    bottom: 0;
 		border-left: 15px solid transparent;
 		border-right: 15px solid transparent;
-		border-top: 15px solid #fff;
+		border-top: 15px solid #333; /* Darker arrow to match dark tabs */
 		border-bottom: 0;
 		margin-right: -15px;
 	}
-	.tab-menu .nav-tabs li a:hover::after, 
+	.tab-menu .nav-tabs li a:hover::after,
 	.tab-menu .nav-tabs li a.active::after {
 		right: 50%;
 	}
