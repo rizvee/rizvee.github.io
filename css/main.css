@@ -2295,6 +2295,162 @@ body.sidebar-active>#ncf-overlay {
     box-shadow: 0 0 5px var(--primary-color);
 }
 
+
+/* New Skill Sheet Styles */
+.skill-category {
+    margin-bottom: 60px; /* Increased spacing between main categories */
+}
+
+.skill-category-heading {
+    font-family: var(--primary-font); /* Ensure Poppins */
+    font-size: 30px; /* Larger font size for impact */
+    font-weight: 700;
+    color: var(--primary-color);
+    margin-bottom: 35px; /* Space below main category heading */
+    padding-bottom: 15px;
+    position: relative;
+    text-transform: uppercase; /* Uppercase for boldness */
+    letter-spacing: 1px; /* Add some letter spacing */
+}
+
+.skill-category-heading i {
+    margin-right: 15px;
+    font-size: 28px;
+}
+
+/* Underline effect similar to .section-title h1 */
+.skill-category-heading:after,
+.skill-category-heading:before {
+    position: absolute;
+    content: "";
+    height: 3px;
+    background-color: var(--primary-color);
+}
+
+.skill-category-heading:after {
+    width: 60px;
+    left: 0;
+    bottom: 0px; /* Adjust to sit nicely */
+}
+.skill-category-heading:before {
+    width: 30px;
+    left: 10px;
+    bottom: -5px; /* Create layered effect */
+    background-color: color-mix(in srgb, var(--primary-color) 80%, #fff); /* Lighter teal */
+}
+
+.skill-subcategory-heading {
+    font-family: var(--primary-font); /* Ensure Poppins */
+    font-size: 22px; /* Prominent sub-heading */
+    font-weight: 600;
+    color: #E0E0E0;
+    margin-top: 30px; /* Space above sub-category list */
+    margin-bottom: 25px; /* Space below sub-category heading */
+    padding-left: 15px;
+    border-left: 4px solid var(--primary-color); /* Teal accent line */
+}
+
+.skill-subcategory-heading i {
+    margin-right: 12px;
+    color: var(--primary-color);
+}
+
+.skill-item {
+    background-color: #2A2A2A;
+    padding: 25px; /* Increased padding */
+    margin-bottom: 20px;
+    border-radius: 5px; /* Slightly more rounded */
+    border: 1px solid #333;
+    transition: all 0.3s ease-out; /* Keep transition for hover */
+    color: #E0E0E0;
+    min-height: 100px; /* Ensure consistent height for items in a row if needed */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.skill-item h4 { /* Used for Core Expertise skill titles */
+    font-family: 'Montserrat', sans-serif; /* Montserrat for these titles if desired, or Poppins */
+    font-size: 18px;
+    font-weight: 600;
+    color: var(--primary-color);
+    margin-bottom: 10px;
+}
+.skill-item h4 i {
+    margin-right: 8px;
+}
+
+.skill-item p { /* Used for Core Expertise skill descriptions */
+    font-size: 14px;
+    color: #B0B0B0;
+    line-height: 1.7; /* Improved line height */
+    margin-bottom: 0;
+    flex-grow: 1;
+}
+
+.skill-item.tech-skill { /* For individual technical skills like HTML, CSS, CLO3D etc. */
+    font-family: 'Montserrat', sans-serif; /* Montserrat for a slightly different feel for tech skills */
+    font-size: 16px;
+    font-weight: 500;
+    text-align: center; /* Center align tech skills for a different look */
+}
+.skill-item.tech-skill .skill-name { /* If skill name is wrapped */
+    display: block;
+    margin-bottom: 10px;
+}
+
+
+.skill-item .skill-note {
+    display: block;
+    font-size: 0.8em; /* Smaller note */
+    color: #A0A0A0;
+    margin-top: 8px;
+    font-style: italic;
+    line-height: 1.4;
+}
+
+.skill-item:hover {
+    background-color: var(--primary-color);
+    color: #121212;
+    transform: translateY(-5px) scale(1.02); /* Slight lift and scale */
+    box-shadow: 0 12px 25px rgba(0, 245, 212, 0.25); /* Enhanced glow */
+}
+
+.skill-item:hover h4,
+.skill-item:hover p,
+.skill-item:hover .skill-note,
+.skill-item:hover .skill-name { /* Ensure skill-name also changes color */
+    color: #121212;
+}
+.skill-item:hover h4 i { /* Target icon specifically for hover within h4 */
+    color: #121212 !important;
+}
+
+.skill-item:hover .progress {
+    background-color: rgba(18,18,18,0.3); /* Darker track for progress on hover */
+}
+.skill-item:hover .progress .progress-bar {
+    background-color: #121212; /* Dark bar on teal background */
+}
+
+.skill-item .progress {
+    height: 6px; /* Thinner progress bar */
+    border-radius: 3px;
+    background-color: #3a3a3a; /* Slightly lighter dark track */
+    margin-top: 12px; /* Space above progress bar */
+    overflow: hidden; /* Ensure progress bar stays within bounds */
+}
+
+.skill-item .progress-bar {
+    background-color: var(--primary-color);
+    width: 100%; /* Default to 100% for visual representation */
+    height: 100%;
+    border-radius: 3px;
+    transition: width 0.5s ease-in-out; /* Animate width changes if ever dynamic */
+}
+/* End New Skill Sheet Styles */
+
+
 /* subscribe */
 
 .subscribe {
