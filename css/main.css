@@ -3254,3 +3254,45 @@ label.error {
     font-weight: 600;
     margin-bottom: 17px;
 }
+
+/* LinkedIn Follow Section Styles */
+.linkedin-follow-section .section-content {
+    /* Adjusted padding for a tighter fit on all screens initially */
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 40px;
+    padding-right: 40px;
+
+    background-color: #1A1A1A; /* Consistent dark background */
+    border: 1px solid #333; /* Subtle border for definition */
+    border-radius: 8px; /* IMPORTANT: Softer, more card-like corners (increased from 4px) */
+    /* Enhanced box-shadow for a prominent card look */
+    box-shadow: 0 8px 25px 10px rgba(0, 245, 212, 0.08); /* More spread out, subtle teal glow */
+
+    /* Add transition for smooth hover effects */
+    transition: all 0.3s ease-out; /* Match global transitions but ensure effect for this block */
+}
+
+.linkedin-follow-section .section-content:hover {
+    background-color: #1A1A1A; /* Maintain background or subtly change if desired on hover */
+    transform: translateY(-5px) scale(1.02); /* Lift and slight scale on hover */
+    /* More intense shadow on hover */
+    box-shadow: 0 15px 40px 15px rgba(0, 245, 212, 0.2); /* Stronger glow for "scroll-stopping" effect */
+    border-color: var(--primary-color); /* Highlight border on hover */
+}
+
+.linkedin-follow-text {
+    font-size: 20px;
+    font-weight: 500;
+    color: #E0E0E0;
+    margin-bottom: 10px; /* Keep tight spacing */
+    font-family: var(--primary-font);
+    line-height: 1.4;
+}
+
+@media (min-width: 992px) { /* Applies to desktop and larger screens */
+    .linkedin-follow-section .section-content {
+        padding-top: 5px;    /* Even tighter padding for PC */
+        padding-bottom: 5px; /* Even tighter padding for PC */
+    }
+}
