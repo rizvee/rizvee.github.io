@@ -401,7 +401,7 @@ jQuery(function ($) {
         submitHandler: function (form) {
             $.ajax({
                 type: "POST",
-                url: "https://mailpostexample.herokuapp.com/",
+                url: "email.php", // Changed to email.php
                 data: $(form).serialize(),
                 beforeSend: function () {
                     $('.flashinfo').hide();
