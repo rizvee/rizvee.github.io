@@ -173,9 +173,7 @@
                                     <p><strong>The Value for My Clients:</strong> This expertise is my secret weapon. It informs my entire process, allowing me to create forward-thinking strategies and visual concepts that most developers can't. When you work with me, you’re getting a partner who understands where the digital world is headed.</p>
                                 </div>
                                 <div class="col-md-6">
-                                    <div class="innovation-lab-image">
-                                        <img src="images/bg/bg3.jpg" alt="3D Fashion Tech">
-                                    </div>
+                                    <div id="innovation-lab-animation"></div>
                                 </div>
                             </div>
                         </div>
@@ -565,6 +563,7 @@
 
 
 <!-- JS -->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
         <script src="js/jquery.min.js"></script> <!-- jQuery must load first, synchronously -->
         <script src="js/popper.min.js" defer></script>
         <script src="js/bootstrap.min.js" defer></script>
@@ -579,6 +578,37 @@
         <script src="js/jquery.backstretch.min.js" defer></script>
         <script src="js/validate.js" defer></script>
         <script src="js/main.js" defer></script>
+
+    <script>
+        const container = document.getElementById('innovation-lab-animation');
+        const scene = new THREE.Scene();
+        const camera = new THREE.PerspectiveCamera(75, container.clientWidth / container.clientHeight, 0.1, 1000);
+        const renderer = new THREE.WebGLRenderer({ alpha: true });
+        renderer.setSize(container.clientWidth, container.clientHeight);
+        container.appendChild(renderer.domElement);
+
+        const geometry = new THREE.TorusKnotGeometry(10, 3, 100, 16);
+        const material = new THREE.MeshStandardMaterial({ color: 0x007bff, metalness: 0.8, roughness: 0.2 });
+        const torusKnot = new THREE.Mesh(geometry, material);
+        scene.add(torusKnot);
+
+        const light = new THREE.PointLight(0xffffff, 1, 100);
+        light.position.set(20, 20, 20);
+        scene.add(light);
+
+        const ambientLight = new THREE.AmbientLight(0x404040);
+        scene.add(ambientLight);
+
+        camera.position.z = 30;
+
+        function animate() {
+            requestAnimationFrame(animate);
+            torusKnot.rotation.x += 0.01;
+            torusKnot.rotation.y += 0.01;
+            renderer.render(scene, camera);
+        }
+        animate();
+    </script>
 
     <script type="application/ld+json">
     [
