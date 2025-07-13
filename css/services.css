@@ -1,0 +1,79 @@
+/* New CSS for the services page */
+
+.signature-blueprint {
+    background-color: #f8f9fa;
+    border: 1px solid #dee2e6;
+    border-radius: .25rem;
+    padding: 2rem;
+    margin-bottom: 2rem;
+}
+
+.signature-blueprint h2 {
+    font-size: 2rem;
+    font-weight: 600;
+    margin-bottom: 1rem;
+}
+
+.innovation-lab {
+    padding: 4rem 0;
+}
+
+.innovation-lab h2 {
+    font-size: 2rem;
+    font-weight: 600;
+    margin-bottom: 2rem;
+    text-align: center;
+}
+
+.innovation-lab-image {
+    text-align: center;
+}
+
+.innovation-lab-image img {
+    max-width: 100%;
+    border-radius: .25rem;
+}
+
+.signature-blueprint p {
+    font-size: 1.1rem;
+    line-height: 1.6;
+}
+
+.modular-solutions {
+    padding: 4rem 0;
+}
+
+.modular-solutions h2 {
+    font-size: 2rem;
+    font-weight: 600;
+    margin-bottom: 1rem;
+    text-align: center;
+}
+
+.modular-solutions > p {
+    font-size: 1.1rem;
+    line-height: 1.6;
+    text-align: center;
+    margin-bottom: 2rem;
+}
+
+.modular-solution {
+    background-color: #fff;
+    border: 1px solid #dee2e6;
+    border-radius: .25rem;
+    padding: 2rem;
+    margin-bottom: 2rem;
+    height: 100%;
+}
+
+.modular-solution .icon {
+    font-size: 3rem;
+    color: #007bff;
+    margin-bottom: 1rem;
+}
+
+.modular-solution h3 {
+    font-size: 1.5rem;
+    font-weight: 600;
+    margin-bottom: 1rem;
+}
