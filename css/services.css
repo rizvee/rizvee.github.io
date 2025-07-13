@@ -16,6 +16,17 @@
     margin-bottom: 1rem;
 }
 
+.seo-section {
+    padding: 4rem 0;
+    text-align: center;
+}
+
+.seo-section h2 {
+    font-size: 2rem;
+    font-weight: 600;
+    margin-bottom: 1rem;
+}
+
 .innovation-lab {
     padding: 4rem 0;
 }
