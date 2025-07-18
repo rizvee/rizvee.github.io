@@ -16,14 +16,10 @@
     margin-bottom: 1rem;
 }
 
-#spline-container {
+#interactive-3d-model {
     min-height: 400px;
-    background-color: #1A1A1A;
-    border: 1px solid #333;
-    border-radius: 4px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    cursor: grab;
+    width: 100%;
 }
 
 #particles-js {
