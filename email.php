@@ -1,7 +1,7 @@
 <?php
 
 $errors = '';
-$myemail = 'hasanmdrizvee@gmail.com'; // Updated email address
+$myemail = 'hbsmrizvee@gmail.com'; // Updated email address
 
 // Check for required fields
 if(empty($_POST['firstname'])  ||
