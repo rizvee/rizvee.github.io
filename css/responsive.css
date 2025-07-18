@@ -499,4 +499,20 @@
 
 }/* 475 */
 
+/* Portfolio Responsive Adjustments */
+@media (max-width: 991px) {
+    .portfolio-item {
+        margin-bottom: 30px; /* Add space between cards on smaller screens */
+    }
+}
+
+@media (max-width: 767px) {
+    .portfolio-category-title {
+        font-size: 2rem; /* Slightly smaller title on mobile */
+    }
+
+    .portfolio h2 {
+        font-size: 1.5rem; /* Adjust card title size for mobile */
+    }
+}
 
