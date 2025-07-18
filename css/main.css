@@ -3347,3 +3347,32 @@ label.error {
     display: block;
     margin-top: 20px;
 }
+
+.service-features-list {
+    list-style: none;
+    padding-left: 0;
+    margin-top: 25px;
+}
+
+.service-features-list li {
+    display: flex;
+    align-items: flex-start;
+    margin-bottom: 15px;
+    font-size: 1rem;
+    color: #B0B0B0;
+}
+
+.service-features-list li i {
+    color: #00F5D4; /* Accent color */
+    font-size: 1.2rem;
+    margin-right: 15px;
+    margin-top: 4px;
+    width: 20px; /* Ensures alignment */
+    text-align: center;
+}
+
+.service-features-list li strong {
+    font-weight: 600;
+    color: #E0E0E0; /* Brighter color for the sub-title */
+    margin-right: 8px;
+}
