@@ -1,0 +1,33 @@
+# OS / editor
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/
+
+# Logs
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# Local QA / temporary screenshots
+local_qa_*.png
+screenshot*.png
+*_screenshot.png
+
+# Dependency/build folders if accidentally created
+node_modules/
+dist/
+build/
+.next/
+out/
+
+# Antigravity / AI scratch artifacts
+.antigravity/
+.gemini/
+scratch/
+tmp/
+temp/
+
+# Archives are local-only unless intentionally committed
+_archive/

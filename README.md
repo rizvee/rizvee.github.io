@@ -1,12 +1,19 @@
-# RIZVEE.GITHUB.IO
+# Hasan Rizvee Portfolio
 
-Welcome to the repository for Hasan Rizvee's personal portfolio website.
+Static personal portfolio for Hasan Rizvee, deployed through GitHub Pages.
 
-This site showcases my expertise as a **Digital Brand Architect**, spanning web development, e-commerce, digital marketing, and fashion-tech innovation.
+Live site: https://rizvee.github.io/
 
-## Live Demo
-[rizvee.github.io](https://rizvee.github.io/)
+## Deployment
 
-## Connect
-* **LinkedIn:** [Hasan Rizvee](https://www.linkedin.com/in/hasanrizvee/)
-* **GitHub:** [rizvee](https://github.com/rizvee)
+This site is plain HTML/CSS/JS and deploys automatically through GitHub Actions.
+
+Push to `main`:
+
+```bash
+git add .
+git commit -m "Update portfolio"
+git push origin main
+```
+
+GitHub Actions will publish the latest version to GitHub Pages.
